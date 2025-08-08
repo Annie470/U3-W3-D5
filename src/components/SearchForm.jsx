@@ -28,6 +28,7 @@ const SearchForm = () => {
         className="me-2 white-placeholder text-center"
       />
     </Form>
+    
   );
 };
 
