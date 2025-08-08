@@ -2,7 +2,7 @@
   color: white;
 }
 .white-placeholder::placeholder {
-  color: white;
+  color: rgb(0, 0, 0);
   opacity: 1;
 }
 .toggle-danger {
