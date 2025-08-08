@@ -3,7 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeContainer from "./components/HomeContainer";
-import Risultati from "./components/Risultati";
+
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
      
             <Routes>
               <Route path="/" element={<HomeContainer />} />
-              <Route path="/risultati" element={<Risultati />} />
+{/* AVEVO SCRITTO UNA PAGINA DI RISULTATI MA HO AVUTO QUALCHE PROBLEMA NELLA LOGICA, MI OCCORREVA PIU TEMPO... HO ELIMINATO */}
             </Routes>
 
       </BrowserRouter>
