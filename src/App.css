@@ -1,0 +1,15 @@
+.text {
+  color: white;
+}
+.white-placeholder::placeholder {
+  color: white;
+  opacity: 1;
+}
+.toggle-danger {
+  background-color: transparent !important;
+  border: none !important;
+}
+.toggle-danger .navbar-toggler-icon {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(91%) saturate(7493%)
+    hue-rotate(-8deg) brightness(88%) contrast(85%);
+}
