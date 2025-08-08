@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Alert } from "react-bootstrap";
 import Hero from "./Hero";
 import Card from "./Card";
 import Label from "./Label"
@@ -87,16 +87,26 @@ const MainPage = () => {
             Nuove uscite{" "}
             <Button className="bg-transparent border-0"> &gt;</Button>
           </h3>
-          {arrayAlbum &&
-            arrayAlbum.slice(0, 5).map((track) => (
-              <Col xs={3} md={2} key={track.id}>
-                <Card
-                  img={track.album.cover_medium}
-                  title={track.title}
-                  icon={""}
-                />
-              </Col>
-            ))}
+       
+         {arrayAlbum.length === 0 ? (
+  <Col>
+    <Alert variant="danger" className="text-center">
+      Impossibile caricare gli album.
+    </Alert>
+  </Col>
+) : (
+  arrayAlbum.slice(0, 5).map((track) => (
+    <Col xs={3} md={2} key={track.id}>
+      <Card
+        img={track.album.cover_medium}
+        title={track.title}
+        icon={""}
+      />
+    </Col>
+  ))
+)}
+
+          
         </Row>
  <h3 className="mt-3 text-light">
             Altro da esplorare{" "}

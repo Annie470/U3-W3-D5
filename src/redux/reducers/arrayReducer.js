@@ -2,8 +2,6 @@ import { ADD_ARRAY } from "../actions/fetchAction";
 
 const initialState = {
   arrayAlbum: [],
-  loading: false,
-  error: null,
 };
 
 const arrayReducer = (state = initialState, action) => {
